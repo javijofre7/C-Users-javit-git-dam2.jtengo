@@ -13,5 +13,6 @@ public Client getClient() {
 
 public void setClient(Client client) {
 	this.client = client;
+	
 }
 }
