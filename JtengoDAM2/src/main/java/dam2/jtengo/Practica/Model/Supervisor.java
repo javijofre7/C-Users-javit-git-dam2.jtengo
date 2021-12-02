@@ -4,8 +4,12 @@ public class Supervisor extends Venedor{
 public Botiga botiga;
 public int telefon;
 
-public Supervisor() {
-	super();
+
+
+public Supervisor(String dni, String nom, String congom1, String cognom2, Botiga botiga, int telefon) {
+	super(dni, nom, congom1, cognom2);
+	this.botiga = botiga;
+	this.telefon = telefon;
 }
 
 public Botiga getBotiga() {
@@ -24,4 +28,18 @@ public void setTelefon(int telefon) {
 	this.telefon = telefon;
 }
 
+@Override
+public String toString() {
+	return super.toString()+"Supervisor [botiga=" + botiga + ", telefon=" + telefon + "]";
+}
+public void addSupervisor(Supervisor supervisor) {
+	
+}
+public void modificarSupervisor(Supervisor supervisor) {
+	
+	
+}
+public void borrarSupervisor(String DNI) {
+	
+}
 }

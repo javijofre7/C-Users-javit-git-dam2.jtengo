@@ -7,8 +7,15 @@ public Article article;
 public int unitats;
 public double preuUnitats;
 
-public LineaComanda() {
+
+
+public LineaComanda(int codiLinea, Comanda comanda, Article article, int unitats, double preuUnitats) {
 	
+	this.codiLinea = codiLinea;
+	this.comanda = comanda;
+	this.article = article;
+	this.unitats = unitats;
+	this.preuUnitats = preuUnitats;
 }
 
 public int getCodiLinea() {
@@ -51,4 +58,18 @@ public void setPreuUnitats(double preuUnitats) {
 	this.preuUnitats = preuUnitats;
 }
 
+@Override
+public String toString() {
+	return "LineaComanda [codiLinea=" + codiLinea + ", comanda=" + comanda + ", article=" + article + ", unitats="
+			+ unitats + ", preuUnitats=" + preuUnitats + "]";
+}
+public void addLineaComanda(LineaComanda liniea) {
+	
+}
+public void modificarLineaComanda(LineaComanda linea) {
+	
+}
+public void borrarTiquet(int codiLinea) {
+	
+}
 }

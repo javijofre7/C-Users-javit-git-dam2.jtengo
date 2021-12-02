@@ -7,8 +7,15 @@ public Article article;
 public int unitats;
 public double preuUnitat;
 
-public LineaTiquet() {
-	
+
+
+public LineaTiquet(int codiLinea, Tiquet tiquet, Article article, int unitats, double preuUnitat) {
+
+	CodiLinea = codiLinea;
+	this.tiquet = tiquet;
+	this.article = article;
+	this.unitats = unitats;
+	this.preuUnitat = preuUnitat;
 }
 
 public int getCodiLinea() {
@@ -49,5 +56,20 @@ public double getPreuUnitat() {
 
 public void setPreuUnitat(double preuUnitat) {
 	this.preuUnitat = preuUnitat;
+}
+
+@Override
+public String toString() {
+	return "LineaTiquet [CodiLinea=" + CodiLinea + ", tiquet=" + tiquet + ", article=" + article + ", unitats="
+			+ unitats + ", preuUnitat=" + preuUnitat + "]";
+}
+public void addLineaTiquet(LineaTiquet linea) {
+	
+}
+public void modificarLineaTiquet(LineaTiquet linea) {
+	
+}
+public void borrarLineaTiquet(int codiLinea) {
+	
 }
 }

@@ -4,8 +4,12 @@ public class Roba extends Article{
 public String marca;
 public String talla;
 
-public Roba() {
-	super();
+
+
+public Roba(int iD_Article, String descripcio, double preuCompra, double preuVenda, String marca, String talla) {
+	super(iD_Article, descripcio, preuCompra, preuVenda);
+	this.marca = marca;
+	this.talla = talla;
 }
 
 public String getMarca() {
@@ -22,5 +26,22 @@ public String getTalla() {
 
 public void setTalla(String talla) {
 	this.talla = talla;
+}
+
+@Override
+public String toString() {
+	return super.toString()+"Roba [marca=" + marca + ", talla=" + talla + "]";
+}
+public void modificarRoba(Roba roba) {
+	
+
+}
+public void addRoba(Roba roba) {
+	
+
+
+}
+public void borrarRoba(int id) {
+
 }
 }

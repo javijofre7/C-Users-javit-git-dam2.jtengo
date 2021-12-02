@@ -6,8 +6,14 @@ public String descripcio;
 public double preuCompra;
 public double preuVenda;
 
-public Article() {
+
+
+public Article(int iD_Article, String descripcio, double preuCompra, double preuVenda) {
 	
+	ID_Article = iD_Article;
+	this.descripcio = descripcio;
+	this.preuCompra = preuCompra;
+	this.preuVenda = preuVenda;
 }
 
 public int getID_Article() {
@@ -41,4 +47,11 @@ public double getPreuVenda() {
 public void setPreuVenda(double preuVenda) {
 	this.preuVenda = preuVenda;
 }
+
+@Override
+public String toString() {
+	return "Article [ID_Article=" + ID_Article + ", descripcio=" + descripcio + ", preuCompra=" + preuCompra
+			+ ", preuVenda=" + preuVenda + "]";
+}
+
 }

@@ -8,8 +8,14 @@ public String adresa;
 public Magatzem magatzem;
 public ArrayList<Venedor> venedor;
 
-public Botiga() {
+
+
+public Botiga(int idBotiga, String adresa, Magatzem magatzem, ArrayList<Venedor> venedor) {
 	
+	this.idBotiga = idBotiga;
+	this.adresa = adresa;
+	this.magatzem = magatzem;
+	this.venedor = venedor;
 }
 
 public int getIdBotiga() {
@@ -42,5 +48,20 @@ public ArrayList<Venedor> getVenedor() {
 
 public void setVenedor(ArrayList<Venedor> venedor) {
 	this.venedor = venedor;
+}
+
+@Override
+public String toString() {
+	return "Botiga [idBotiga=" + idBotiga + ", adresa=" + adresa + ", magatzem=" + magatzem + ", venedor=" + venedor
+			+ "]";
+}
+public void addBotiga(Botiga botiga) {
+	
+}
+public void modificarBotiga(Botiga botiga) {
+	
+}
+public void borrarBotiga(int id) {
+	
 }
 }

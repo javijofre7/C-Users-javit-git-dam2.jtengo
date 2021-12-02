@@ -6,8 +6,14 @@ public String nom;
 public String congom1;
 public String cognom2;
 
-public Persona() {
-	
+
+
+public Persona(String dni, String nom, String congom1, String cognom2) {
+
+	this.dni = dni;
+	this.nom = nom;
+	this.congom1 = congom1;
+	this.cognom2 = cognom2;
 }
 
 public String getDni() {
@@ -40,5 +46,10 @@ public String getCognom2() {
 
 public void setCognom2(String cognom2) {
 	this.cognom2 = cognom2;
+}
+
+@Override
+public String toString() {
+	return "Persona [dni=" + dni + ", nom=" + nom + ", congom1=" + congom1 + ", cognom2=" + cognom2 + "]";
 }
 }

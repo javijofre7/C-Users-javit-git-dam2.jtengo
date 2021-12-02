@@ -7,8 +7,13 @@ public int idTiquet;
 public ArrayList<LineaTiquet> liniesTiquet;
 public double total;
 
-public Tiquet() {
+
+
+public Tiquet(int idTiquet, ArrayList<LineaTiquet> liniesTiquet, double total) {
 	
+	this.idTiquet = idTiquet;
+	this.liniesTiquet = liniesTiquet;
+	this.total = total;
 }
 
 public int getIdTiquet() {
@@ -33,5 +38,19 @@ public double getTotal() {
 
 public void setTotal(double total) {
 	this.total = total;
+}
+
+@Override
+public String toString() {
+	return "Tiquet [idTiquet=" + idTiquet + ", liniesTiquet=" + liniesTiquet + ", total=" + total + "]";
+}
+public void addTiquet(Tiquet tiquet) {
+	
+}
+public void modificarTiquet(Tiquet tiquet) {
+	
+}
+public void borrarTiquet(int id) {
+	
 }
 }

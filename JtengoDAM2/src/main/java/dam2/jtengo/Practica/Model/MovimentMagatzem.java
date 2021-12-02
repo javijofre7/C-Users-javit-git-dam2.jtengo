@@ -7,8 +7,15 @@ public Magatzem desti;
 public Article article;
 public int unitats;
 
-public MovimentMagatzem() {
+
+
+public MovimentMagatzem(int idMoviment, Magatzem origen, Magatzem desti, Article article, int unitats) {
 	
+	this.idMoviment = idMoviment;
+	this.origen = origen;
+	this.desti = desti;
+	this.article = article;
+	this.unitats = unitats;
 }
 
 public int getIdMoviment() {
@@ -49,5 +56,20 @@ public int getUnitats() {
 
 public void setUnitats(int unitats) {
 	this.unitats = unitats;
+}
+
+@Override
+public String toString() {
+	return "MovimentMagatzem [idMoviment=" + idMoviment + ", origen=" + origen + ", desti=" + desti + ", article="
+			+ article + ", unitats=" + unitats + "]";
+}
+public void addMoviment(MovimentMagatzem moviment) {
+	
+}
+public void modificarMoviment(MovimentMagatzem moviment) {
+	
+}
+public void borrarMoviment(int id) {
+	
 }
 }
